@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+
+    --fonte: 'Outfit', sans-serif;
+
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightGray);
+    width: 100%;
+    height: 100vh;
+}
+
+
+main section {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    width: 380px;
+    height: 580px;
+    text-align: center;
+}
+
+section  div img {
+    width: 340px;
+    border-radius: 15px;
+}
+
+section div#paragrafo {
+    width: 320px;
+    margin: 0 auto;
+}
+
+section div h1 {
+    font-family: var(--fonte);
+    font-size: 1.8em;
+    color: var(--darkBlue);
+    
+}
+
+section div P {
+    font-family: var(--fonte);
+    font-size: 1.3em;
+    color: var(--grayishBlue);
+    margin: 0 auto;
+    width: 320px;
+
+}
+
+
+footer {
+    display: flex;
+    margin-top: 60px;
+}
+
+footer p {
+    font-family: var(--fonte);
+    font-size: 1.2em;
+}
+
+footer p  a {
+    text-decoration: none;
+    color:  var(--darkBlue);
+    font-size: 1em;
+}
